@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wiki. usé IA para js, no sé js :(</title>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body { 
+            font-family: Arial, sans-serif; 
+            line-height: 1.6; 
+            background: #1c1f26; 
+            color: #e5e5e5;
+            padding: 1.5rem;
+        }
+
+        h1, h2 {
+            color: #8ab4ff;
+        }
+
+        summary {
+            cursor: pointer;
+            font-weight: bold;
+            padding: .4rem;
+            border-radius: 6px;
+            background: #2a2f3a;
+            color: #d7e3ff;
+            transition: 0.2s ease-in-out;
+        }
+
+        summary:hover {
+            background: #394152;
+        }
+
+        details {
+            margin: .8rem 0;
+            padding-left: .5rem;
+        }
+
+        .tool-link {
+            margin: .3rem 0 .6rem 0;
+            display: block;
+        }
+
+        #reloj-container {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin: 1rem 0;
+            padding: 0.5rem 1rem;
+            display: inline-block;
+            border-radius: 10px;
+            background: #2c313c;
+            color: #aee1ff;
+        }
+
+        .subtitulo {
+            color: #ffd479;
+            font-weight: bold;
+            margin-top: .6rem;
+        }
+
+        a {
+            color: #7dc3ff;
+        }
+
+        #volver-arriba {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: .7rem 1rem;
+            font-size: .9rem;
+            border: none;
+            border-radius: 8px;
+            background: #2a2f3a;
+            color: #d7e3ff;
+            cursor: pointer;
+            display: none;
+            transition: 0.3s;
+        }
+
+        #volver-arriba:hover {
+            background: #394152;
+        }
+
+        footer {
+            margin-top: 2rem;
+            padding: 1rem;
+            background: #2a2f3a;
+            border-radius: 8px;
+            text-align: center;
+            color: #d7e3ff;
+        }
+    </style>
+
+</head>
+<body>
+
+<header>
+    <h1>Intereses</h1>
+    <p>Página enfocada en intereses variados (software, IA, música y escuela).<br>
+    Sí, todo en un solo sitio. No es como si pudiera hacer mil archivos… aunque debería.</p>
+</header>
+
+<div id="reloj-container">
+    <span id="saludo"></span> — <span id="hora"></span>
+</div>
+
+<main>
+
+<h2 class="subtitulo">Intereses</h2>
+
+<details>
+    <summary>Desarrollo de software</summary>
+
+    <details>
+        <summary>Herramientas gratuitas para aprender lenguajes</summary>
+
+        <details>
+            <summary>W3Schools</summary>
+            <a class="tool-link" href="https://www.w3schools.com" target="_blank">Abrir W3Schools</a>
+            <ul>
+                <li>Tutoriales simples</li>
+                <li>Editor "Try it Yourself"</li>
+            </ul>
+        </details>
+
+        <details>
+            <summary>freeCodeCamp</summary>
+            <a class="tool-link" href="https://www.freecodecamp.org" target="_blank">Abrir freeCodeCamp</a>
+            <ul>
+                <li>Cursos completos, certificados y proyectos reales</li>
+            </ul>
+        </details>
+
+        <details>
+            <summary>MDN Web Docs</summary>
+            <a class="tool-link" href="https://developer.mozilla.org/es/" target="_blank">Abrir MDN</a>
+            <p>Documentación oficial y explicaciones técnicas claras. Ideal si quieres aprender "de verdad".</p>
+        </details>
+
+    </details>
+
+    <details>
+        <summary>Herramientas IA para ayudar con código</summary>
+
+        <details>
+            <summary>GitHub Copilot</summary>
+            <a class="tool-link" href="https://github.com/features/copilot" target="_blank">Abrir Copilot</a>
+            <p>Te sugiere código, te completa funciones y a veces parece que te lee la mente.</p>
+        </details>
+
+        <details>
+            <summary>Tabnine</summary>
+            <a class="tool-link" href="https://www.tabnine.com/" target="_blank">Abrir Tabnine</a>
+            <p>Autocompletado inteligente para programadores que no quieren pensar demasiado.</p>
+        </details>
+    </details>
+
+</details>
+
+<h3 class="subtitulo">Música</h3>
+
+<details>
+    <summary>Herramientas para música instrumental</summary>
+
+    <details>
+        <summary>Suno</summary>
+        <a href="https://suno.com" target="_blank">Ir a Suno</a>
+        <p>IA para crear música completa sin saber teoría musical.</p>
+        <ul>
+            <li>Generación automática de letras y estilos.</li>
+            <li>Produce canciones completas en segundos.</li>
+            <li>Ideal para inspiración rápida.</li>
+        </ul>
+    </details>
+
+    <details>
+        <summary>BandLab</summary>
+        <a href="https://bandlab.com" target="_blank">BandLab</a>
+        <p>Editor de audio online con herramientas de grabación, mezcla y colaboración.</p>
+        <ul>
+            <li>Grabación multipista.</li>
+            <li>Comunidad enorme.</li>
+            <li>Efectos integrados.</li>
+        </ul>
+    </details>
+
+    <details>
+        <summary>AudioTool</summary>
+        <a href="https://www.audiotool.com" target="_blank">AudioTool (crea beats online)</a>
+        <p>Plataforma avanzada para música electrónica.</p>
+        <ul>
+            <li>Sintetizadores modulares.</li>
+            <li>Sistema de cables.</li>
+            <li>Ideal para electrónica y ambient.</li>
+        </ul>
+    </details>
+</details>
+
+<details>
+    <summary>Música favorita</summary>
+
+    <details>
+        <summary>nefex.</summary>
+        <p>música electrónica.</p>
+        <a href="https://www.youtube.com/@neffexmusic/videos" target="_blank">Escuchar nefex</a>
+        <ul>
+            <li>a veces son músicas fuertes.</li>
+            <li>ambientación rápida.</li>
+        </ul>
+    </details>
+
+    <details>
+        <summary>Old school (90s vibes)</summary>
+        <p>Instrumentales con vibe noventero.</p>
+        <ul>
+            <li>Nirvana</li>
+            <li>Guns N' Roses</li>
+            <li>Metallica</li>
+        </ul>
+    </details>
+
+    <p>Cierre</p>
+    <p>Ok, cierro la lista antes de que Spotify me cobre.</p>
+
+</details>
+
+<h2 class="subtitulo">🏫 Escuela</h2>
+
+<details>
+    <summary>Recursos útiles</summary>
+    <ul>
+        <li><a href="https://www.khanacademy.org" target="_blank">Khan Academy</a><br><span style="font-size:0.9rem;opacity:0.8;">Videos claros y prácticas para casi cualquier materia.</span></li>
+        <li><a href="https://www.sparknotes.com" target="_blank">SparkNotes</a><br><span style="font-size:0.9rem;opacity:0.8;">Resúmenes rápidos de literatura para salvarte antes de un examen.</span></li>
+        <li><a href="https://www.coursera.org" target="_blank">Coursera</a><br><span style="font-size:0.9rem;opacity:0.8;">Cursos serios, largos y útiles si quieres aprender algo bien.</span></li>
+        <li><a href="https://classroom.google.com" target="_blank">Google Classroom</a> — El sitio donde descubres que la tarea era para hace 3 días.<br><span style="font-size:0.9rem;opacity:0.8;">Organiza tareas, entrega trabajos y mantén contacto con tus profes.</span></li>
+        <li><a href="https://www.w3schools.com" target="_blank">Otro enlace a W3Schools</a><br><span style="font-size:0.9rem;opacity:0.8;">aprender programación con ejemplos. me encanta este sitio.</span></li>
+    </ul>
+</details>
+
+<details>
+    <summary>Gemini</summary>
+    <p>Apóyate en Gemini. Es útil, rápido, pero no dejes que haga todo por ti.</p>
+    <a href="https://gemini.google.com" target="_blank">Abrir Gemini</a>
+
+    <details>
+        <summary>Cómo te puede ayudar</summary>
+        <ul>
+            <li>Explicaciones rápidas</li>
+            <li>Tareas prácticas</li>
+            <li>Generación de ideas</li>
+            <li>Apoyo básico en programación</li>
+        </ul>
+    </details>
+</details>
+
+<h2 class="subtitulo">Lo que uso fuera de escuela</h2>
+
+<details>
+    <summary>Herramientas varias</summary>
+
+    <details>
+        <summary>Audiogames.net</summary>
+        <a class="tool-link" href="https://forum.audiogames.net" target="_blank">Abrir audiogames.net</a>
+        <p>Foro orientado a ciegos para descubrir programas y juegos.</p>
+    </details>
+
+</details>
+
+</main>
+
+<footer>
+<p>y ahora?</p>
+<p>posiblemente se expanda eso. esto realmente es útil, así que quizás se añadan otras cosas</p>
+<p>gracias por pasar por aqui 👍</p>
+</footer>
+
+<button id="volver
